@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Bytecoin - Debug window</string>
+   <string>Bitblox - Debug window</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -36,7 +36,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Bytecoin Core</string>
+          <string>Bitblox Core</string>
          </property>
         </widget>
        </item>

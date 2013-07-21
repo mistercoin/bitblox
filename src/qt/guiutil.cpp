@@ -77,8 +77,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no bytecoin URI
-    if(!uri.isValid() || uri.scheme() != QString("bytecoin"))
+    // return if URI is not valid or is no bitblox URI
+    if(!uri.isValid() || uri.scheme() != QString("bitblox"))
         return false;
 
     SendCoinsRecipient rv;
@@ -123,13 +123,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert bytecoin:// to bytecoin:
+    // Convert bitblox:// to bitblox:
     //
-    //    Cannot handle this later, because bytecoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because bitblox:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("bytecoin://"))
+    if(uri.startsWith("bitblox://"))
     {
-        uri.replace(0, 10, "bytecoin:");
+        uri.replace(0, 10, "bitblox:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -273,12 +273,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Bytecoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Bitblox.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Bytecoin.lnk
+    // check for Bitblox.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -355,7 +355,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "bytecoin.desktop";
+    return GetAutostartDir() / "bitblox.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -393,10 +393,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a bytecoin.desktop file to the autostart directory:
+        // Write a bitblox.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Bytecoin\n";
+        optionFile << "Name=Bitblox\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -417,10 +417,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("Bytecoin-Qt") + " " + tr("version") + " " +
+    header = tr("Bitblox-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  bytecoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  bitblox-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -429,7 +429,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("Bytecoin-Qt"));
+    setWindowTitle(tr("Bitblox-Qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));

@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x00000000c3040b997c96926200ed00b0a5b2e97e3d0015deb41249489e666f84");
+uint256 hashGenesisBlock("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -59,7 +59,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Bytecoin Signed Message:\n";
+const string strMessageMagic = "Bitblox Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -1052,16 +1052,16 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
+    int64 nSubsidy = 36 * COIN;
 
-    // Subsidy is cut in half every 210000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 210000);
+    // Subsidy is cut in half every 100000 blocks
+    nSubsidy >>= (nHeight / 100000);
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-static const int64 nTargetSpacing = 10 * 60;
+static const int64 nTargetTimespan = 1 * 60; // 1 hour
+static const int64 nTargetSpacing = 600;
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -2687,7 +2687,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0x22;
         pchMessageStart[2] = 0x03;
         pchMessageStart[3] = 0x14;
-        hashGenesisBlock = uint256("0000000017295c46d2ef2a1875ab3328cf6fc95e6edcb912c71ad0540080a807");
+        hashGenesisBlock = uint256("");
     }
 
     //
@@ -2720,26 +2720,26 @@ bool InitBlockIndex() {
         //   vMerkleTree: 4a5e1e
 
         // Genesis block
-        const char* pszTimestamp = "04/01/2013 ABC News: North Korea pledges to expand nuclear program.";
+        const char* pszTimestamp = "07/21/2013 CNN News: U.S. military jettisons bombs near Australia's Great Barrier Reef";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
+        txNew.vout[0].nValue = 36 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 2;
-        block.nTime    = 1364786987;
+        block.nTime    = 1374426830;
         block.nBits    = 0x1d00ffff;
-        block.nNonce   = 29849213;
+        block.nNonce   = 0;
 
         if (fTestNet)
         {
-            block.nTime    = 1364786999;
-            block.nNonce   = 4235439128;
+            block.nTime    = 1374426835;
+            block.nNonce   = 0;
         }
 
         //// debug print
@@ -2747,7 +2747,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xbd9dffac8ab3eaefdddb6784168e11d40a3b8492767fb5f97af80893937d85f6"));
+        assert(block.hashMerkleRoot == uint256("0x"));
         block.print();
         assert(hash == hashGenesisBlock);
 
@@ -4455,7 +4455,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("BytecoinMiner:\n");
+    printf("BitbloxMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4464,7 +4464,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("BytecoinMiner : generated block is stale");
+            return error("BitbloxMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4478,7 +4478,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("BytecoinMiner : ProcessBlock, block not accepted");
+            return error("BitbloxMiner : ProcessBlock, block not accepted");
     }
 
     return true;
@@ -4492,7 +4492,7 @@ static int nLimitProcessors = -1;
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    printf("BytecoinMiner started\n");
+    printf("BitbloxMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
@@ -4528,7 +4528,7 @@ void static BitcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running BytecoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running BitbloxMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
 
@@ -4679,7 +4679,7 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
         if (fLimitProcessors && nProcessors > nLimitProcessors)
             nProcessors = nLimitProcessors;
         int nAddThreads = nProcessors - vnThreadsRunning[THREAD_MINER];
-        printf("Starting %d BytecoinMiner threads\n", nAddThreads);
+        printf("Starting %d BitbloxMiner threads\n", nAddThreads);
         for (int i = 0; i < nAddThreads; i++)
         {
             if (!NewThread(ThreadBitcoinMiner, pwallet))

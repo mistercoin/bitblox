@@ -6,13 +6,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Bytecoin</source>
-        <translation>About Bytecoin</translation>
+        <source>About Bitblox</source>
+        <translation>About Bitblox</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Bytecoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Bytecoin&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Bitblox&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Bitblox&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -69,8 +69,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your Bytecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your Bytecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your Bitblox addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your Bitblox addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -84,8 +84,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Bytecoin address</source>
-        <translation>Sign a message to prove you own a Bytecoin address</translation>
+        <source>Sign a message to prove you own a Bitblox address</source>
+        <translation>Sign a message to prove you own a Bitblox address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -99,8 +99,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified Bytecoin address</source>
-        <translation>Verify a message to ensure it was signed with a specified Bytecoin address</translation>
+        <source>Verify a message to ensure it was signed with a specified Bitblox address</source>
+        <translation>Verify a message to ensure it was signed with a specified Bitblox address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -230,8 +230,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BYTECOINS&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BYTECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITBLOXS&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITBLOXS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -257,8 +257,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Bytecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bytecoins from being stolen by malware infecting your computer.</source>
-        <translation>Bytecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bytecoins from being stolen by malware infecting your computer.</translation>
+        <source>Bitblox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitbloxs from being stolen by malware infecting your computer.</source>
+        <translation>Bitblox will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitbloxs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -371,8 +371,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Bytecoin</source>
-        <translation>Show information about Bytecoin</translation>
+        <source>Show information about Bitblox</source>
+        <translation>Show information about Bitblox</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -429,13 +429,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-65"/>
-        <source>Send coins to a Bytecoin address</source>
-        <translation>Send coins to a Bytecoin address</translation>
+        <source>Send coins to a Bitblox address</source>
+        <translation>Send coins to a Bitblox address</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bytecoin</source>
-        <translation>Modify configuration options for Bytecoin</translation>
+        <source>Modify configuration options for Bitblox</source>
+        <translation>Modify configuration options for Bitblox</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -480,8 +480,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+176"/>
-        <source>&amp;About Bytecoin</source>
-        <translation>&amp;About Bytecoin</translation>
+        <source>&amp;About Bitblox</source>
+        <translation>&amp;About Bitblox</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bytecoin addresses to prove you own them</source>
-        <translation>Sign messages with your Bytecoin addresses to prove you own them</translation>
+        <source>Sign messages with your Bitblox addresses to prove you own them</source>
+        <translation>Sign messages with your Bitblox addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bytecoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Bytecoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Bitblox addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Bitblox addresses</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -541,15 +541,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+63"/>
-        <source>Bytecoin client</source>
-        <translation>Bytecoin client</translation>
+        <source>Bitblox client</source>
+        <translation>Bitblox client</translation>
     </message>
     <message numerus="yes">
         <location line="+79"/>
-        <source>%n active connection(s) to Bytecoin network</source>
+        <source>%n active connection(s) to Bitblox network</source>
         <translation>
-            <numerusform>%n active connection to Bytecoin network</numerusform>
-            <numerusform>%n active connections to Bytecoin network</numerusform>
+            <numerusform>%n active connection to Bitblox network</numerusform>
+            <numerusform>%n active connections to Bitblox network</numerusform>
         </translation>
     </message>
     <message>
@@ -676,8 +676,8 @@ Address: %4
     <message>
         <location line="-28"/>
         <location line="+28"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bytecoin address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Bytecoin address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Bitblox address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Bitblox address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -777,8 +777,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bytecoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Bytecoin address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Bitblox address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Bitblox address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -796,8 +796,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>Bytecoin-Qt</source>
-        <translation>Bytecoin-Qt</translation>
+        <source>Bitblox-Qt</source>
+        <translation>Bitblox-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -859,13 +859,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Bytecoin after logging in to the system.</source>
-        <translation>Automatically start Bytecoin after logging in to the system.</translation>
+        <source>Automatically start Bitblox after logging in to the system.</source>
+        <translation>Automatically start Bitblox after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Bytecoin on system login</source>
-        <translation>&amp;Start Bytecoin on system login</translation>
+        <source>&amp;Start Bitblox on system login</source>
+        <translation>&amp;Start Bitblox on system login</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -884,8 +884,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Bytecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Bytecoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Bitblox client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Bitblox client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -894,8 +894,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Bytecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Bytecoin network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the Bitblox network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Bitblox network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -969,8 +969,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bytecoin.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Bytecoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Bitblox.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Bitblox.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -984,8 +984,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bytecoin addresses in the transaction list or not.</source>
-        <translation>Whether to show Bytecoin addresses in the transaction list or not.</translation>
+        <source>Whether to show Bitblox addresses in the transaction list or not.</source>
+        <translation>Whether to show Bitblox addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1036,8 +1036,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Bytecoin.</source>
-        <translation>This setting will take effect after restarting Bytecoin.</translation>
+        <source>This setting will take effect after restarting Bitblox.</source>
+        <translation>This setting will take effect after restarting Bitblox.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1055,8 +1055,8 @@ Address: %4
     <message>
         <location line="+51"/>
         <location line="+183"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bytecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Bytecoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitblox network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitblox network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-141"/>
@@ -1261,8 +1261,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Bytecoin-Qt help message to get a list with possible Bytecoin command-line options.</source>
-        <translation>Show the Bytecoin-Qt help message to get a list with possible Bytecoin command-line options.</translation>
+        <source>Show the Bitblox-Qt help message to get a list with possible Bitblox command-line options.</source>
+        <translation>Show the Bitblox-Qt help message to get a list with possible Bitblox command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1281,13 +1281,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Bytecoin - Debug window</source>
-        <translation>Bytecoin - Debug window</translation>
+        <source>Bitblox - Debug window</source>
+        <translation>Bitblox - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Bytecoin Core</source>
-        <translation>Bytecoin Core</translation>
+        <source>Bitblox Core</source>
+        <translation>Bitblox Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1296,8 +1296,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bytecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Bytecoin debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Bitblox debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Bitblox debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1306,8 +1306,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bytecoin RPC console.</source>
-        <translation>Welcome to the Bytecoin RPC console.</translation>
+        <source>Welcome to the Bitblox RPC console.</source>
+        <translation>Welcome to the Bitblox RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1361,8 +1361,8 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTE</source>
-        <translation>123.456 BTE</translation>
+        <source>123.456 BLX</source>
+        <translation>123.456 BLX</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1490,8 +1490,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bytecoin address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</source>
-        <translation>Enter a Bytecoin address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</translation>
+        <source>Enter a Bitblox address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</source>
+        <translation>Enter a Bitblox address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</translation>
     </message>
 </context>
 <context>
@@ -1555,8 +1555,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bytecoin address</source>
-        <translation>Sign the message to prove you own this Bytecoin address</translation>
+        <source>Sign the message to prove you own this Bitblox address</source>
+        <translation>Sign the message to prove you own this Bitblox address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1591,8 +1591,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bytecoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Bytecoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Bitblox address</source>
+        <translation>Verify the message to ensure it was signed with the specified Bitblox address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1607,8 +1607,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Bytecoin address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</source>
-        <translation>Enter a Bytecoin address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</translation>
+        <source>Enter a Bitblox address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</source>
+        <translation>Enter a Bitblox address (e.g. EfWhpGkYFejmqZa1CWwjFuYHxSdL6rjWBA)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1617,8 +1617,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bytecoin signature</source>
-        <translation>Enter Bytecoin signature</translation>
+        <source>Enter Bitblox signature</source>
+        <translation>Enter Bitblox signature</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2185,8 +2185,8 @@ Address: %4
     </message>
     <message>
         <location line="-24"/>
-        <source>Send command to -server or bytecoind</source>
-        <translation>Send command to -server or bytecoind</translation>
+        <source>Send command to -server or bitbloxd</source>
+        <translation>Send command to -server or bitbloxd</translation>
     </message>
     <message>
         <location line="-22"/>
@@ -2205,13 +2205,13 @@ Address: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: bytecoin.conf)</source>
-        <translation>Specify configuration file (default: bytecoin.conf)</translation>
+        <source>Specify configuration file (default: bitblox.conf)</source>
+        <translation>Specify configuration file (default: bitblox.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: bytecoind.pid)</source>
-        <translation>Specify pid file (default: bytecoind.pid)</translation>
+        <source>Specify pid file (default: bitbloxd.pid)</source>
+        <translation>Specify pid file (default: bitbloxd.pid)</translation>
     </message>
     <message>
         <location line="-48"/>
@@ -2298,7 +2298,7 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=bytecoinrpc
+rpcuser=bitbloxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2307,7 +2307,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=bytecoinrpc
+rpcuser=bitbloxrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2325,8 +2325,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Bytecoin is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Bytecoin is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Bitblox is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Bitblox is probably already running.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2375,8 +2375,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bytecoin will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bytecoin will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitblox will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitblox will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2575,8 +2575,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+4"/>
-        <source>SSL options: (see the Bytecoin Wiki for SSL setup instructions)</source>
-        <translation>SSL options: (see the Bytecoin Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the Bitblox Wiki for SSL setup instructions)</source>
+        <translation>SSL options: (see the Bitblox Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2745,8 +2745,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bytecoin</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Bytecoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Bitblox</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Bitblox</translation>
     </message>
     <message>
         <location line="+86"/>
@@ -2760,8 +2760,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Bytecoin to complete</source>
-        <translation>Wallet needed to be rewritten: restart Bytecoin to complete</translation>
+        <source>Wallet needed to be rewritten: restart Bitblox to complete</source>
+        <translation>Wallet needed to be rewritten: restart Bitblox to complete</translation>
     </message>
     <message>
         <location line="-90"/>
@@ -2825,8 +2825,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Bytecoin is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Bytecoin is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Bitblox is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Bitblox is probably already running.</translation>
     </message>
     <message>
         <location line="+66"/>

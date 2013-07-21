@@ -1008,13 +1008,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bytecoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bytecoin
-    // Mac: ~/Library/Application Support/Bytecoin
-    // Unix: ~/.bytecoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bitblox
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bitblox
+    // Mac: ~/Library/Application Support/Bitblox
+    // Unix: ~/.bitblox
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bytecoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bitblox";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1026,10 +1026,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Bytecoin";
+    return pathRet / "Bitblox";
 #else
     // Unix
-    return pathRet / ".bytecoin";
+    return pathRet / ".bitblox";
 #endif
 #endif
 }
@@ -1071,7 +1071,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "bytecoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "bitblox.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1081,14 +1081,14 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good())
-        return; // No bytecoin.conf file is OK
+        return; // No bitblox.conf file is OK
 
     set<string> setOptions;
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override bytecoin.conf
+        // Don't overwrite existing settings so command line settings override bitblox.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {
